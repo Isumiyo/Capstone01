@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+
+	<!-- Bootstrap 4.6 CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<!-- Exteral CSS -->
+	<link rel="stylesheet" href="./style.css" type="text/css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- NavBar -->
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<a href="#" class="navbar-brand">
+			<img src="./images/profile.png" alt="profile" width="30" height="30" class="d-inline-block align-top">
+			My Portfolio
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+	  		<ul class="navbar-nav">
+	  			<li class="nav-item active">
+	  				<a href="#" class="nav-link">Home<span class="sr-only">(current)</span></a>
+	  			</li>
+
+	  			<li class="nav-item">
+	  				<a href="#about-me" class="nav-link">About Me</a>
+	  			</li>
+
+	  			<li class="nav-item">
+	  				<a href="#projects" class="nav-link">Projects</a>
+	  			</li>
+	  		</ul>
+	  	</div>
+	</nav>
+	<!-- End of Navbar -->
+
+	<!-- About Me Section -->
+	<section id="about-me">
+		<div class="jumbotron">
+			<div class="row py-4 d-flex justify-content-center">
+				<div id="about-me-2" class="col-md-6 slide-in-left">
+					<img id="me-pic" class="rounded-circle" src="./images/my-pic.png" alt="my-pic">
+					<h2 class="mt-4">Isumiyo G. Permelona</h2>
+					<h3 class="lead">Full-Stack Web Developer</h3>
+				</div>
+
+				<div id="about-me-3" class="col-md-6">
+					<h1 class="slide-in-left">Welcome to My Portfolio!</h1>
+					<h3 class="lead slide-in-left">Hi! You can call me Isu. I Design, Build and Deploy Website to your liking. Want to know my work? Click on the button below</h3>
+
+					<a href="#projects">
+						<button id="go-to-projects" class="btn slide-in-left" type="button">
+							My Projects
+						</button>
+					</a>
+				</div>	
+			</div>	
+		</div>
+	</section>
+	<!-- End of About Me -->
+
+
+	<!-- Second Section -->
+	<section id="projects">
+
+		<div class="container-fluid">
+			<div id="project-title" class="row py-5">
+				<div class="col-12">  
+					<h2>My Recent Works</h2>
+					<p>
+						Below are the capstone projects that I had the pleasure of working on while attending the Coding Bootcamp by Zuitt
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+
+			<div id="project-cards" class="row pt-4 pb-4 d-flex justify-content-center">
+
+				<div class="col-md-4">
+					<div id="capstone01" class="card slide-in-left">
+						<div class="card-body">
+							<img id="img1" class="py-3 mx-3" src="./images/front-end.png" alt="capstone-1">
+							<h2>FRONTEND</h2>
+							<h3>CAPSTONE - 01</h3>
+							<p class="text-justify">
+								This contains the output for my first project during the Zuitt Coding Bootcamp. This contains the basic structure on how to create a website, it includes ways on using - HTML,CSS,Boostrap 
+							</p>
+							<button id="view-project" class="btn btn-outline-secondary bg-secondary mt-3" data-toggle="modal" data-target="#submitProject" type="button">
+							View Project
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div id="capstone02" class="card slide-in-bottom">
+						<div class="card-body">
+							<img id="img2" class="py-3 mx-3" src="./images/backend.png" alt="capstone-2">
+							<h2>BACKEND</h2>
+							<h3>CAPSTONE - 02</h3>
+							<p class="text-justify">
+								This contains the output for my Second project during the Zuitt Coding Bootcamp. This contains all the information in making the backend of a website - SQL, PHP and etc...
+							</p>
+
+							<button id="view-project" class="btn btn-outline-secondary bg-secondary mt-3" data-toggle="modal" data-target="#submitProject" type="button">
+							View Project
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div id="capstone03" class="card slide-in-right">
+						<div class="card-body">
+							<img id="img3" class="py-3 mx-3" src="./images/full-stack.png" alt="capstone-3">
+							<h2>FULLSTACK</h2>
+							<h3>CAPSTONE - 03</h3>
+							<p class="text-justify">
+								This contains the output for my Third and Final project during the Zuitt Coding Bootcamp. This contains the basic structure on how to create a website, Incorporating the first and second output
+							</p>
+							<button id="view-project" class="btn btn-outline-secondary bg-secondary mt-3" data-toggle="modal" data-target="#submitProject" type="button">
+							View Project
+							</button>
+						</div>
+					</div>
+				</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="submitProject" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="ModalLabel">Confirmation</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        <p class="lead">Opening Project</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn btn-primary">Save changes</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- End Modal -->
+		
+			</div>
+				
+		</div>
+	</section>
+	<!-- End of Second Section -->
+
+	<!-- Third Section -->
+	<section id="contacts">
+		<div class="container-fluid">
+			
+				<h2 class="text-center">Contact Me!</h2>
+				<p class="lead text-center">
+					Send me a message for Website request or Visit me personally on my office with the location below 
+				</p>
+			
+			<div class="row py-4">
+				<div class="col-md-6 d-flex justify-content-end">
+					<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.582694141663!2d121.05124188145373!3d14.581875560484004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c83ed737105d%3A0x99b785dc10957e41!2sWorldwide%20Corporate%20Center!5e0!3m2!1sen!2sph!4v1646209189136!5m2!1sen!2sph" 
+						width="600" 
+						height="500" 
+						style="border:0;" 
+						allowfullscreen="" 
+						loading="lazy">		
+					</iframe>
+				</div>
+
+				<div class="col-md-4">
+					<form id="contact" class="border border-black p-4 align-left" id="contact-form" action="">
+						<!-- Input Name -->
+						<div class="form-group">
+							<label for="txt-name">Name:</label>
+							<input class="form-control" 
+								   type="text" 
+								   name="fullName" 
+								   placeholder="e.x John Doe"
+								   required
+								   autocomplete>
+						</div>
+						<!-- End Input Name -->
+
+						<!-- Email Address -->
+						<div class="form-group">
+							<label for="txt-email">Email:</label>
+							<input id="txt-email" 
+								   class="form-control" 
+								   type="email" 
+								   name="email" 
+								   placeholder="name@example.com">
+						</div>
+						<!-- End of Email Address -->
+
+						<!-- Input Contact Number -->
+						<div class="form-group">
+							<label for="contact-num">Contact Number:</label>
+							<input type="text"
+								   class="form-control"
+								   name="contact-num"
+								   placeholder="ex: 09275893816"
+								   required
+								   autocomplete>
+						</div>
+						<!-- End Input Contact Number -->
+
+						<!-- Text Area -->
+						<div>
+							<label for="txt-message">Messages:</label>
+							<textarea id="txt-message" class="form-control" rows="4"></textarea>	
+						</div>
+						<!-- End of Text Area -->
+
+						<!-- Button -->
+						<button id="submit-email" class="btn btn-outline-secondary bg-secondary mt-3" data-toggle="modal" data-target="#submitModal" type="button">
+						Send Email
+						</button>
+						<!-- Button End -->
+					</form>
+
+					<!-- Modal -->
+						<div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="ModalLabel">Confirmation</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        <p class="lead">Email Has been Sent!</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn btn-primary">Save changes</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					<!-- End Modal -->
+				</div>
+
+						
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End of Third Section -->
+
+
+	<!-- Footer -->
+	<footer class="page-footer font-small unique-color-dark pt-3 d-flex justify-content-center">
+		<div class="row container align-center">
+			<div class="col-6 col-md ">
+		      <h5 class="text-white">Social Media</h5>
+		      <ul class="list-unstyled text-small">
+		        <li><a class="text-white" href="#">Facebook</a></li>
+		        <li><a class="text-white" href="#">Twitter</a></li>
+		        <li><a class="text-white" href="#">Instagram</a></li>
+		      </ul>
+		    </div>
+
+		    <div class="col-6 col-md">
+		      <h5 class="text-white">Contact Us</h5>
+		      <ul class="list-unstyled text-small">
+		        <li><a class="text-white" href="#">Phone: 09756741222</a></li>
+		        <li><a class="text-white" href="#">Email: User@email.com</a></li>
+		      </ul>
+		    </div>
+
+		    <div class="col-6 col-md">
+		      <h5 class="text-white">Address</h5>
+		      <ul class="list-unstyled text-small">
+		        <li><a class="text-white" href="#">Branch: 281 Santo Thomas, Cavite, Philippines</a></li>	      
+		      </ul>
+		    </div>
+		</div>
+	  <!-- Copyright -->
+	  <!-- <div class="footer-copyright text-center py-3">© 2022 Copyright:
+	    <a href="https://mdbootstrap.com/"> Zuitt.com</a>
+	  </div> -->
+	  <!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+
+
+
+
+	<!-- JS Dependencies -->
+	<script 
+		src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+		crossorigin="anonymous">	
+	</script>
+
+	<script 
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+	</script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	justify-content: center;
+}
+
+nav {
+	background-color: #171710;
+	padding-bottom: 10px;
+}
+
+
+/*ANIMATIONS*/
+
+/*CSS Slide Left*/
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*End CSS Slide Left*/
+
+
+/*Slide Bottom*/
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*End Slide Bottom*/
+
+/*Slide Right*/
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*End of Slide Right*/
+
+
+/*END OF ANIMATIONS*/
+
+
+
+.jumbotron {
+	/*background: #280B3B;*/
+	background-image: url(./images/mount-mayon.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron::before {
+	content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+#img1 {
+	width: 200px;
+	height: 200px;
+}
+
+#img2 {
+	width: 200px;
+	height: 200px;
+}
+
+#img3 {
+	width: 200px;
+	height: 200px;
+}
+
+#about-me-2 {
+	text-align: center;
+}
+
+#go-to-projects {
+	color: black;
+	background: #FFBD59;
+	text-align: center;
+	border: none;
+	padding: 16px 32px;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+/*Button Hover Animation*/
+
+.btn:hover{
+	opacity: 1;
+}
+
+/*Button Hover Animation*/
+
+#project-title {
+	text-align: center;
+}
+
+.card {
+	text-align: center;
+}
+
+#project-cards {
+	background: #171710;
+}
+
+#capstone01 {
+	background: #595E60;
+	color: white;
+}
+
+#capstone02 {
+	background: #595E60;
+	color: white;
+}
+
+#capstone03 {
+	background: #595E60;
+	color: white;
+}
+
+#me-pic{
+	width: 400px;
+	height: 400px;
+
+}
+
+#project-title {
+	background: #171710;
+	color: white;
+}
+
+#about-me {
+	background: #171710;
+	color: white;
+	padding-top: 30px;
+}
+
+#contacts {
+	background: #171710;
+	color: white;
+}
+
+#contact {
+	background: #595E60;
+}
+
+#submit-email {
+	color: white;
+}
+
+#view-project {
+	color: white;
+}
+
+footer {
+	background: #595E60;
+	color: white;
+}
+
+
+
